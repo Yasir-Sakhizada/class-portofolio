@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaser — Web Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-[#0B0D12] text-[#EDEDF2] antialiased font-['Inter',sans-serif] selection:bg-emerald-300 selection:text-[#0B0D12]"
+  >
+    <!-- mobile menu toggle checkbox (pure CSS/HTML, no JS) -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+    <!-- ============ NAV ============ -->
+    <header
+      class="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-[#0B0D12]/70 border-b border-white/5"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between"
+      >
+        <a
+          href="#top"
+          class="font-['Space_Grotesk',sans-serif] font-semibold text-lg tracking-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 focus-visible:outline-offset-4 rounded"
+        >
+          Yaser<span class="text-emerald-400">.</span>dev
+        </a>
+
+        <nav
+          class="hidden md:flex items-center gap-8 font-['IBM_Plex_Mono',monospace] text-sm text-slate-400"
+        >
+          <a
+            href="#work"
+            class="hover:text-white hover:underline hover:decoration-emerald-300 hover:decoration-2 hover:underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+            >Work</a
+          >
+          <a
+            href="#about"
+            class="hover:text-white hover:underline hover:decoration-emerald-300 hover:decoration-2 hover:underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+            >About</a
+          >
+          <a
+            href="#stack"
+            class="hover:text-white hover:underline hover:decoration-emerald-300 hover:decoration-2 hover:underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+            >Stack</a
+          >
+          <a
+            href="#contact"
+            class="ml-2 px-4 py-2 rounded-full bg-emerald-500 text-[#0B0D12] font-medium hover:bg-emerald-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+            >Say hello</a
+          >
+        </nav>
+
+        <!-- mobile menu button = label toggling the checkbox above -->
+        <label
+          for="menu-toggle"
+          class="md:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+        >
+          <span class="w-6 h-px bg-[#EDEDF2]"></span>
+          <span class="w-6 h-px bg-[#EDEDF2]"></span>
+          <span class="sr-only">Toggle menu</span>
+        </label>
+      </div>
+
+      <!-- mobile menu panel: hidden by default, shown when checkbox is checked -->
+      <div
+        class="md:hidden hidden peer-checked:block border-t border-white/5 bg-[#0B0D12]/95"
+      >
+        <nav
+          class="flex flex-col px-6 py-4 gap-4 font-['IBM_Plex_Mono',monospace] text-sm text-slate-400"
+        >
+          <a href="#work" class="py-1 hover:text-white transition-colors"
+            >Work</a
+          >
+          <a href="#about" class="py-1 hover:text-white transition-colors"
+            >About</a
+          >
+          <a href="#stack" class="py-1 hover:text-white transition-colors"
+            >Stack</a
+          >
+          <a href="#contact" class="py-1 text-emerald-300">Say hello →</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section
+      id="top"
+      class="relative min-h-screen flex items-center pt-16 overflow-hidden"
+    >
+      <div class="relative z-10 max-w-6xl mx-auto px-6 md:px-10 py-20 w-full">
+        <div class="max-w-3xl">
+          <p
+            class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 mb-6 tracking-wide"
+          >
+            Web Developer — building fast, accessible interfaces
+          </p>
+          <h1
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-[13vw] sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight"
+          >
+            Hi, I'm Yaser.<br />I build things<br />for the
+            <span class="text-emerald-400">web</span>.
+          </h1>
+          <p
+            class="mt-8 text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed"
+          >
+            A web developer focused on clean code, performant front-ends, and
+            interfaces that hold up under real-world use. I turn designs into
+            fast, responsive, accessible products.
+          </p>
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <a
+              href="#work"
+              class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 px-6 py-3 rounded-full bg-emerald-400 text-[#0B0D12] font-['IBM_Plex_Mono',monospace] text-sm font-medium hover:bg-white transition-colors"
+            >
+              View my work
+            </a>
+            <a
+              href="#contact"
+              class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 px-6 py-3 rounded-full border border-white/15 font-['IBM_Plex_Mono',monospace] text-sm hover:border-white/40 transition-colors"
+            >
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="border-y border-white/5 bg-white/2">
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-10 py-6 flex flex-wrap items-center justify-between gap-6 font-['IBM_Plex_Mono',monospace] text-xs text-slate-400 uppercase tracking-widest"
+      >
+        <span>Worked with</span>
+        <div class="flex flex-wrap gap-x-10 gap-y-2 text-slate-300">
+          <span>Nova Retail</span>
+          <span>Brightline Agency</span>
+          <span>Kestrel Finance</span>
+          <span>Loop Studio</span>
+          <span>Pathway Health</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32">
+      <div class="flex items-end justify-between mb-14 flex-wrap gap-4">
+        <div>
+          <p
+            class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 mb-3"
+          >
+            Selected work
+          </p>
+          <h2
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-4xl md:text-5xl tracking-tight"
+          >
+            Projects I've shipped.
+          </h2>
+        </div>
+        <p class="text-slate-400 max-w-xs text-sm leading-relaxed">
+          A mix of client work and personal builds — from e-commerce to internal
+          tools.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <article
+          class="border border-white/10 rounded-2xl p-8 bg-white/[0.03] hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300"
+        >
+          <div class="flex items-center justify-between mb-6">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >Nova Retail</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-2 py-1 rounded-full bg-white/5 text-slate-400"
+              >React, Next.js</span
+            >
+          </div>
+          <h3
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-2xl md:text-3xl mb-3 tracking-tight"
+          >
+            Headless storefront rebuild
+          </h3>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Migrated a legacy storefront to a headless Next.js front-end backed
+            by a commerce API. Cut page load times significantly and improved
+            checkout conversion.
+          </p>
+          <div class="flex items-center justify-between">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >45% faster load times</span
+            >
+            <a
+              href="#"
+              class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 hover:underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+              >View project →</a
+            >
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="border border-white/10 rounded-2xl p-8 bg-white/[0.03] hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300"
+        >
+          <div class="flex items-center justify-between mb-6">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >Kestrel Finance</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-2 py-1 rounded-full bg-white/5 text-slate-400"
+              >Vue, TypeScript</span
+            >
+          </div>
+          <h3
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-2xl md:text-3xl mb-3 tracking-tight"
+          >
+            Internal reporting dashboard
+          </h3>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Built a dashboard for finance teams to track spend across
+            departments, replacing a set of manually-updated spreadsheets with a
+            single live view.
+          </p>
+          <div class="flex items-center justify-between">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >Used by 12 teams daily</span
+            >
+            <a
+              href="#"
+              class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 hover:underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+              >View project →</a
+            >
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="border border-white/10 rounded-2xl p-8 bg-white/[0.03] hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300"
+        >
+          <div class="flex items-center justify-between mb-6">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >Loop Studio</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-2 py-1 rounded-full bg-white/5 text-slate-400"
+              >Tailwind, Alpine.js</span
+            >
+          </div>
+          <h3
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-2xl md:text-3xl mb-3 tracking-tight"
+          >
+            Marketing site &amp; CMS
+          </h3>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Designed and built a fast, editable marketing site so a small studio
+            team could publish new pages without waiting on a developer.
+          </p>
+          <div class="flex items-center justify-between">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >98 Lighthouse score</span
+            >
+            <a
+              href="#"
+              class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 hover:underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+              >View project →</a
+            >
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article
+          class="border border-white/10 rounded-2xl p-8 bg-white/[0.03] hover:border-emerald-400/60 hover:-translate-y-1.5 transition-all duration-300"
+        >
+          <div class="flex items-center justify-between mb-6">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >Pathway Health</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-2 py-1 rounded-full bg-white/5 text-slate-400"
+              >Accessibility, React</span
+            >
+          </div>
+          <h3
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-2xl md:text-3xl mb-3 tracking-tight"
+          >
+            Accessible patient portal
+          </h3>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Audited and rebuilt a patient-facing portal to meet WCAG 2.1 AA
+            standards, including full keyboard navigation and screen-reader
+            support.
+          </p>
+          <div class="flex items-center justify-between">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+              >WCAG 2.1 AA compliant</span
+            >
+            <a
+              href="#"
+              class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 hover:underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+              >View project →</a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="border-t border-white/5 bg-white/[0.015]">
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 grid md:grid-cols-5 gap-12 md:gap-16"
+      >
+        <div class="md:col-span-2">
+          <p
+            class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 mb-3"
+          >
+            About
+          </p>
+          <h2
+            class="font-['Space_Grotesk',sans-serif] font-semibold text-3xl md:text-4xl tracking-tight leading-tight"
+          >
+            Code that ships,<br />and keeps working.
+          </h2>
+        </div>
+        <div
+          class="md:col-span-3 space-y-6 text-slate-400 text-lg leading-relaxed"
+        >
+          <p>
+            I'm Yaser, a web developer who cares about the details most people
+            never notice — load times, keyboard navigation, what happens when
+            the API fails. I like building things that are simple to use and
+            straightforward to maintain.
+          </p>
+          <p>
+            Most of my work is front-end: React, Vue, and plain JavaScript,
+            styled with Tailwind, wired up to real APIs and content systems.
+            I've also spent time on the backend, building small services in Node
+            when a project needed it.
+          </p>
+          <p>
+            I work with agencies and small teams, usually joining mid-project to
+            help ship something that's stalled, or from the start to set a
+            project up properly.
+          </p>
+          <div class="pt-4 flex flex-wrap gap-3">
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400"
+              >JavaScript</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400"
+              >React</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400"
+              >Tailwind CSS</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400"
+              >Node.js</span
+            >
+            <span
+              class="font-['IBM_Plex_Mono',monospace] text-xs px-3 py-1.5 rounded-full border border-white/10 text-slate-400"
+              >TypeScript</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section id="stack" class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32">
+      <p class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 mb-3">
+        Tools &amp; stack
+      </p>
+      <h2
+        class="font-['Space_Grotesk',sans-serif] font-semibold text-4xl md:text-5xl tracking-tight mb-16 max-w-2xl"
+      >
+        What I build with.
+      </h2>
+
+      <div
+        class="grid md:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden"
+      >
+        <div class="bg-[#0B0D12] p-8 md:p-10">
+          <p
+            class="font-['Space_Grotesk',sans-serif] text-2xl font-semibold mb-4 text-emerald-400"
+          >
+            Front-end
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            React, Next.js, Vue, and Tailwind CSS for building fast, responsive
+            interfaces that work across every screen size.
+          </p>
+        </div>
+        <div class="bg-[#0B0D12] p-8 md:p-10">
+          <p
+            class="font-['Space_Grotesk',sans-serif] text-2xl font-semibold mb-4 text-emerald-400"
+          >
+            Back-end
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            Node.js and Express for APIs and small services, plus experience
+            working with PostgreSQL and REST/GraphQL data layers.
+          </p>
+        </div>
+        <div class="bg-[#0B0D12] p-8 md:p-10">
+          <p
+            class="font-['Space_Grotesk',sans-serif] text-2xl font-semibold mb-4 text-emerald-400"
+          >
+            Workflow
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            Git, CI/CD pipelines, and automated testing — so every deploy is one
+            a team can trust without crossing their fingers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 text-center">
+        <p
+          class="font-['IBM_Plex_Mono',monospace] text-sm text-emerald-300 mb-6"
+        >
+          Currently available for freelance work
+        </p>
+        <h2
+          class="font-['Space_Grotesk',sans-serif] font-semibold text-4xl sm:text-5xl md:text-7xl tracking-tight leading-[0.95] mb-10"
+        >
+          Let's build<br />something together.
+        </h2>
+        <a
+          href="mailto:hello@yaser.dev"
+          class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 inline-block px-8 py-4 rounded-full bg-emerald-400 text-[#0B0D12] font-['IBM_Plex_Mono',monospace] text-sm font-medium hover:bg-white transition-colors"
+        >
+          hello@yaser.dev
+        </a>
+
+        <div
+          class="mt-16 flex items-center justify-center gap-8 font-['IBM_Plex_Mono',monospace] text-sm text-slate-400"
+        >
+          <a
+            href="#"
+            class="hover:text-white hover:underline underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+            >GitHub</a
+          >
+          <a
+            href="#"
+            class="hover:text-white hover:underline underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+            >LinkedIn</a
+          >
+          <a
+            href="#"
+            class="hover:text-white hover:underline underline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-300 rounded"
+            >Twitter</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="border-t border-white/5">
+      <div
+        class="max-w-6xl mx-auto px-6 md:px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-['IBM_Plex_Mono',monospace] text-xs text-slate-400"
+      >
+        <span>© 2026 Yaser. All rights reserved.</span>
+        <span>Built with Tailwind CSS.</span>
+      </div>
+    </footer>
+  </body>
+</html>
